@@ -1,36 +1,42 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import shopingCart from "../assets/portfolio/shopingCart.jpg";
+import urlshortner from "../assets/portfolio/urlshortner.jpg";
+import intership from "../assets/portfolio/intership.jpg";
+import bookmanagement from "../assets/portfolio/bookmanagement.jpg";
+import todo from "../assets/portfolio/todo.webp";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: shopingCart,
+      link : "https://github.com/PawanRajput2000/-E-Commerce-website.git"
     },
     {
       id: 2,
-      src: reactParallax,
+      src: bookmanagement,
+      link : "https://github.com/PawanRajput2000/Book_management.git"
     },
     {
       id: 3,
-      src: navbar,
+      src: intership,
+      link : "https://github.com/PawanRajput2000/Internship.git"
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: todo,
+      link : "https://github.com/PawanRajput2000/todoApplication.git"
     },
     {
       id: 5,
-      src: installNode,
+      src: urlshortner,
+      link : "https://github.com/PawanRajput2000/url---shortner.git"
     },
     {
       id: 6,
       src: reactWeather,
+      link : "https://weatherapp-pawanrajput.netlify.app"
     },
   ];
 
@@ -48,7 +54,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src ,link}) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -56,12 +62,13 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+               
+                <a
+                  href={link}
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 inline-block text-center bg-blue-500 text-white rounded-md"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}

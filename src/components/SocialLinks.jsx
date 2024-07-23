@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { IoCallSharp } from "react-icons/io5";
 
 const SocialLinks = () => {
   const links = [
@@ -12,7 +13,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/pawan-rajput-403a251a2/",
       style: "rounded-tr-md",
     },
     {
@@ -22,7 +23,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/theyashpatel",
+      href: "https://github.com/PawanRajput2000",
     },
     {
       id: 3,
@@ -31,7 +32,7 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:pawanrajput852710@gmail.com",
     },
     {
       id: 4,
@@ -44,11 +45,20 @@ const SocialLinks = () => {
       style: "rounded-br-md",
       download: true,
     },
+    {
+      id: 5,
+      child: (
+        <>
+          Call <IoCallSharp size={30} />
+        </>
+      ),
+      href: "tel:8527108850",
+    }
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
-      <ul>
+    <div className="fixed top-[35%] left-0 flex flex-col lg:flex-col items-start space-y-2">
+      <ul className="space-y-2">
         {links.map(({ id, child, href, style, download }) => (
           <li
             key={id}

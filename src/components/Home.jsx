@@ -1,7 +1,8 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
+import heroImage from "../assets/heroImage.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import {ReactTyped} from "react-typed";
 
 const Home = () => {
   return (
@@ -11,13 +12,20 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Developer
-          </h2>
+          <h6 className="text-4xl sm:text-7xl font-bold text-white">
+            <ReactTyped
+              strings={[
+                "I'm a Full Stack Developer",
+                "I'm a Backend Developer",
+                "I'm a Frontend Developer"
+              ]}
+              typeSpeed={40}
+              backSpeed={50}
+              loop
+            />
+          </h6>
           <p className="text-gray-500 py-4 max-w-md">
-            I have 8 years of experience building and desgining software.
-            Currently, I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
+          I have 2 years of experience in building and designing software, with a strong focus on full-stack web development. My expertise spans across both frontend and backend technologies, including React, Node.js, MongoDB, and Express.js. I thrive in developing dynamic and scalable web applications, leveraging my skills to deliver efficient and robust solutions that enhance user experiences and meet business needs.
           </p>
 
           <div>
@@ -37,7 +45,7 @@ const Home = () => {
 
         <div>
           <img
-            src={HeroImage}
+            src={heroImage}
             alt="my profile"
             className="rounded-2xl mx-auto w-2/3 md:w-full"
           />

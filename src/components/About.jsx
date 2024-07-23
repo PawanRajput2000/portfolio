@@ -8,29 +8,27 @@ const About = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
             About
           </p>
         </div>
 
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
-        </p>
+       
 
         <br />
 
-        <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
+        <p className="text-xl ">
+        Highly motivated and results-oriented software engineer with 2 
+        years of experience in full-stack web development. At Osnil Web Solution Pvt. Ltd.,
+         I work with the MERN stack, leveraging Nodemailer, React, and React-Router-Dom to build dynamic user interfaces, while ensuring secure authentication 
+         using JWT and bcrypt. I manage data with Mongoose, Redis, and MongoDB, 
+         utilize AWS S3 for image storage, and develop REST APIs with Express,
+          deploying applications on Netlify. My projects include Appsala,
+           Appsala Admin Panel, Brandemy, and Wisul. Additionally,
+            I successfully integrated third-party services for email 
+            notifications and user authentication and collaborated closely with 
+            cross-functional teams. Previously, as a Backend Developer Trainee 
+            and Teaching Assistant at FunctionUp, I mentored junior developers and supported them in resolving technical issues and mastering backend development skills.
         </p>
       </div>
     </div>
