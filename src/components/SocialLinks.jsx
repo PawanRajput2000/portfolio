@@ -35,19 +35,9 @@ const SocialLinks = () => {
       ),
       href: "mailto:pawanrajput852710@gmail.com",
     },
+  
     {
       id: 4,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "/resume.pdf",
-      style: "rounded-br-md",
-      download: true,
-    },
-    {
-      id: 5,
       child: (
         <>
           Call <IoCallSharp size={30} />
