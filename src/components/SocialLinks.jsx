@@ -1,8 +1,9 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin,FaWhatsapp } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { IoCallSharp } from "react-icons/io5";
+
 
 const SocialLinks = () => {
   const links = [
@@ -53,6 +54,15 @@ const SocialLinks = () => {
         </>
       ),
       href: "tel:8527108850",
+    },
+    {
+      id: 5,
+      child: (
+        <>
+          What'sApp <FaWhatsapp  size={30} />
+        </>
+      ),
+      href: "https://wa.me/8527108850",
     }
   ];
 
