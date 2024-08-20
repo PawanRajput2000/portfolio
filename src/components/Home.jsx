@@ -1,7 +1,7 @@
 import React from "react";
 import heroImage from "../assets/heroImage.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
+//import { Link } from "react-scroll";
 import {ReactTyped} from "react-typed";
 
 const Home = () => {
@@ -29,18 +29,18 @@ const Home = () => {
           </p>
 
           <div>
-            <Link
+            <a
               to="Resume"
               smooth
-              download={true}
+              download
               href={"/resume.pdf"}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
-              Portfolio
+              Resume
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
 
